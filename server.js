@@ -12,10 +12,6 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Database connection
-import mysql from "mysql2";
-import dotenv from "dotenv";
-dotenv.config();
-
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
   port: process.env.DB_PORT,
